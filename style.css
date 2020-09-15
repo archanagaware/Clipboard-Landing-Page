@@ -1,0 +1,124 @@
+:root {
+    --font-family: 'Bai Jamjuree', sans-serif;
+    --primary-color-one: #26baa4;
+    --primary-color-two: #6173ff;
+    --secondary-color-one: #4c545d;
+    --secondary-color-two: #9fabb2;
+}
+
+body{
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+section {
+    padding: 3em 0;
+}
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.slider {
+    background: url("images/bg-header-mobile.png");
+    background-size: cover;
+}
+
+.slider-header {
+    font-family: var(--font-family);
+    font-size: 2rem;
+}
+.slider-description,
+.about-description,
+.access-description {
+    font-family: var(--font-family);
+    color: var(--secondary-color-two);
+    font-weight: 600;
+    width: 48%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+button {
+    border-radius: 5em;
+    padding: 0.7em 1.2em;
+    border: 0;
+    font-family: var(--font-family);
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.70;
+}
+button.primary {
+    background-color: var(--primary-color-one);
+    color: #FFFFFF;
+}
+button.secondary {
+    background-color: var(--primary-color-two);
+    color: #FFFFFF;
+}
+.content-center {
+    text-align: center;
+}
+.section-title,
+.heading,
+.description {
+    font-family: var(--font-family);
+}
+.heading {
+    margin-bottom: 0;
+}
+.description {
+    color: var(--secondary-color-two);
+    font-weight: 600;
+}
+.about-points ul,
+.quick-links ul {
+    list-style-type: none;
+    margin-top: 0;
+}
+.about-points ul li {
+    margin-bottom: 2.5em;
+}
+.footer {
+    background-color: #D5D5D5;
+    font-family: var(--font-family);
+    padding: 2em 0;
+}
+.footer img {
+    width: 3em;
+}
+.quick-links ul li {
+    padding-bottom: 1em;
+    color: var(--secondary-color-one);
+    font-weight: 600;
+}
+.social-links i {
+    color: var(--secondary-color-one);
+    font-size: 1.5rem;
+    padding: 0 0.3em;
+    cursor: pointer;
+}
+@media (min-width: 700px) {
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-links {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+    }
+    .container {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .slider {
+        background: url("images/bg-header-desktop.png");
+        background-size: cover;
+    }
+    .slider-content {
+        padding-top: 5em;
+    }
+}
