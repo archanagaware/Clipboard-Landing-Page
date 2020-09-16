@@ -13,7 +13,10 @@ img {
     max-width: 100%;
 }
 section {
-    padding: 3em 0;
+    padding-bottom: 5em;
+}
+.slider {
+    padding-top: 5em;
 }
 .container {
     width: 85%;
@@ -35,7 +38,6 @@ section {
     font-family: var(--font-family);
     color: var(--secondary-color-two);
     font-weight: 600;
-    width: 48%;
     margin: 0 auto;
     margin-bottom: 2em;
 }
@@ -45,6 +47,8 @@ button {
     border: 0;
     font-family: var(--font-family);
     cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 1em;
 }
 button:hover {
     opacity: 0.70;
@@ -75,7 +79,8 @@ button.secondary {
 .about-points ul,
 .quick-links ul {
     list-style-type: none;
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
 }
 .about-points ul li {
     margin-bottom: 2.5em;
@@ -91,7 +96,11 @@ button.secondary {
 .quick-links ul li {
     padding-bottom: 1em;
     color: var(--secondary-color-one);
-    font-weight: 600;
+    font-weight: 400;
+    cursor: pointer;
+}
+.quick-links ul li:hover {
+    opacity: 0.5;
 }
 .social-links i {
     color: var(--secondary-color-one);
@@ -99,11 +108,35 @@ button.secondary {
     padding: 0 0.3em;
     cursor: pointer;
 }
+.client-image {
+    text-align: center;
+}
+.client-image img {
+    margin: 1.5em 0;
+}
+.workflow-img {
+    height: 3em;
+}
 @media (min-width: 700px) {
     .flex-container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+    }
+    .about-points,
+    .about-image {
+        width: 50%;
+    }
+    .about-image + .about-points {
+        margin-left: 3em;
+    }
+    .flex-item + .flex-item,
+    .client-image + .client-image {
+        margin-left: 1em;
+    }
+    .slider-description,
+    .about-description,
+    .access-description {
+        width: 48%;
     }
     .footer-links {
         display: flex;
