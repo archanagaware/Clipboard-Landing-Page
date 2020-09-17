@@ -13,6 +13,7 @@ img {
     max-width: 100%;
 }
 section {
+    padding: 0 1em;
     padding-bottom: 5em;
 }
 .slider {
@@ -117,7 +118,11 @@ button.secondary {
 .workflow-img {
     height: 3em;
 }
-@media (min-width: 700px) {
+@media (min-width: 767px) {
+    section {
+        padding: 0;
+        padding-bottom: 5em;
+    }
     .flex-container {
         display: flex;
         justify-content: space-between;
@@ -153,5 +158,17 @@ button.secondary {
     }
     .slider-content {
         padding-top: 5em;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .slider-description,
+    .about-description,
+    .access-description {
+        width: 70%;
+    }
+    .footer-links {
+        display: flex;
+        width: 75%;
+        justify-content: space-between;
     }
 }
