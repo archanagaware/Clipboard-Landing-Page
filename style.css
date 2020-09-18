@@ -1,13 +1,16 @@
 :root {
     --font-family: 'Bai Jamjuree', sans-serif;
-    --primary-color-one: #26baa4;
-    --primary-color-two: #6173ff;
-    --secondary-color-one: #4c545d;
-    --secondary-color-two: #9fabb2;
+    --primary-color-one: #26BAA4;
+    --primary-color-two: #6173FF;
+    --secondary-color-one: #4C545D;
+    --secondary-color-two: #9FABB2;
+    --font-white: #FFFFFF;
+    --footer-background: #D5D5D5;
 }
 
 body{
     margin: 0;
+    font-family: var(--font-family);
 }
 img {
     max-width: 100%;
@@ -21,6 +24,7 @@ section {
 }
 .container {
     width: 85%;
+    max-width: 1240px;
     margin: 0 auto;
 }
 
@@ -30,13 +34,11 @@ section {
 }
 
 .slider-header {
-    font-family: var(--font-family);
     font-size: 2rem;
 }
 .slider-description,
 .about-description,
 .access-description {
-    font-family: var(--font-family);
     color: var(--secondary-color-two);
     font-weight: 600;
     margin: 0 auto;
@@ -46,7 +48,6 @@ button {
     border-radius: 5em;
     padding: 0.7em 1.2em;
     border: 0;
-    font-family: var(--font-family);
     cursor: pointer;
     font-size: 1rem;
     margin-bottom: 1em;
@@ -56,19 +57,14 @@ button:hover {
 }
 button.primary {
     background-color: var(--primary-color-one);
-    color: #FFFFFF;
+    color: var(--font-white);
 }
 button.secondary {
     background-color: var(--primary-color-two);
-    color: #FFFFFF;
+    color: var(--font-white);
 }
 .content-center {
     text-align: center;
-}
-.section-title,
-.heading,
-.description {
-    font-family: var(--font-family);
 }
 .heading {
     margin-bottom: 0;
@@ -87,8 +83,7 @@ button.secondary {
     margin-bottom: 2.5em;
 }
 .footer {
-    background-color: #D5D5D5;
-    font-family: var(--font-family);
+    background-color: var(--footer-background);
     padding: 2em 0;
 }
 .footer img {
@@ -157,7 +152,7 @@ button.secondary {
         background-size: cover;
     }
 }
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .slider-description,
     .about-description,
     .access-description {
